@@ -2,11 +2,13 @@ const types =
 {
     "Weight": ["Tonne", "Kilogram", "Gram", "Milligram", "Microgram", "Imperial Ton", "US Ton",  "Stone", "Pound", "Ounce"],
     "Length": ["Imperial League", "Mile", "Kilometre", "Meter", "Yard", "Foot", "Inch", "Centimeter", "Millimetre"],
+    "Fluid Volume": ["Gallon", "Litre", "Quart", "Pint", "Cup", "Ounce", "Milliliter"],
 };
 const formula = 
 {
     "Weight": [1000000, 1000, 1, 0.001, 0.00001, 1016000, 907200, 6350, 453.6, 28.35],
     "Length": [4828.02, 1609.34, 1000, 1, 0.9144, 0.3048, 0.0254, 0.01, 0.001],
+    "Fluid Volume": [3785, 1000, 946.4, 473.2, 240, 29.574, 1],
 }
 
 
@@ -97,10 +99,13 @@ setInterval(() => {
         if (typeCon.value == "Weight") {
             formulaType = "mass";
             formulaTitleType = "Weight"
-        } else {
+        } else if (typeCon.value == "Length") {
             formulaType = "length";
-            formulaTitleType = "Length"
-        }
+            formulaTitleType = "Length";
+        } else {
+            formulaType = "volume";
+            formulaTitleType = "Fluid Volume"
+        };
         title.innerHTML = `${formulaTitleType} Conversion`
     }
 }, 30);
