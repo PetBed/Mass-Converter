@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+html {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.main-container{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: fit-content;
+}
+.title{
+    padding: 10px 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: #B8860B;
+}
+.title h1 {
+    padding-top: 100px;
+    padding-left: 10px;
+    font-size: 50px;
+    color: #FAEBD7;
+}
+.title p{
+    padding-left: 15px;
+    color: #C7BDB0;
+}
+nav {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: #FAEBD7;
+}
+nav p {
+    padding-left: 10px;
+    font-size: 20px;
+}
+nav p a {
+    color: #FAEBD7;
+    text-decoration: underline;
+}
+.active {
+    text-decoration: none;
+}
+nav p a:hover {
+    cursor: pointer;
+}
+.active:hover {
+    cursor: default;
+}
+.title img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.image h2{
+    padding-top: 100px;
+    padding-left: 10px;
+    font-size: 35px;
+    color: #FAEBD7;
+}
+.image p {
+    padding-left: 10px;
+    font-size: 30px;
+    color: #FAEBD7;
+}
+.image img {
+    border: 3px solid #FAEBD7;
+    margin-left: 10px;
+    width: 550px;
+    height: 500px;
+}
+.image {
+    margin: 10px 0px;
+}
